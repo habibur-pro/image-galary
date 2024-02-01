@@ -1,4 +1,5 @@
 import party from "../src/assets/images/Party.png";
+import explosion from "../src/assets/images/Explosion.png";
 import galarry1 from "../src/assets/images/galarry1.png";
 import galarry2 from "../src/assets/images/galarry2.png";
 import galarry3 from "../src/assets/images/galarry3.png";
@@ -37,24 +38,30 @@ const App = () => {
         </div>
 
         {/* right side  */}
-        <div className="grid grid-cols-4 grid-rows-3 gap-3 h-[800px]">
-          <div className="row-span-2 flex flex-col items-center justify-center h-full">
-            <img className="shrink-0" src={galarry1} alt="" />
-            <img src={galarry2} alt="" />
+        <div className="relative">
+          <div className="grid grid-cols-4 grid-rows-3 gap-3 h-[800px]">
+            <div className="row-span-2 flex flex-col items-center justify-center h-full">
+              <img className="shrink-0" src={galarry1} alt="" />
+              <img src={galarry2} alt="" />
+            </div>
+            <div className="row-span-3 flex flex-col items-center justify-center h-3/4">
+              <img src={galarry3} alt="" />
+              <img src={galarry4} alt="" />
+              <img src={galarry5} alt="" />
+            </div>
+            <div className="row-span-3 flex flex-col items-center justify-center h-3/4">
+              <img src={galarry6} alt="" />
+              <img src={galarry7} alt="" />
+              <img src={galarry8} alt="" />
+            </div>
+            <div className="row-span-2 flex flex-col items-center justify-center h-full">
+              <img src={galarry10} alt="" />
+              <img src={galarry11} alt="" />
+            </div>
           </div>
-          <div className="row-span-3 flex flex-col items-center justify-center h-3/4">
-            <img src={galarry3} alt="" />
-            <img src={galarry4} alt="" />
-            <img src={galarry5} alt="" />
-          </div>
-          <div className="row-span-3 flex flex-col items-center justify-center h-3/4">
-            <img src={galarry6} alt="" />
-            <img src={galarry7} alt="" />
-            <img src={galarry8} alt="" />
-          </div>
-          <div className="row-span-2 flex flex-col items-center justify-center h-full">
-            <img src={galarry10} alt="" />
-            <img src={galarry11} alt="" />
+          {/* bottom star  */}
+          <div className="absolute bottom-0 right-0">
+            <img src={explosion} alt="" />
           </div>
         </div>
       </div>
